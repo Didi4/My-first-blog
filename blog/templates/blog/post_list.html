@@ -4,19 +4,15 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
 
-        <div>
-            <p>published: 30.06.2020, 23:00</p>
-            <h2><a href="">My first post</a></h2>
-            <p>I enjoyed studying C/C++ this year it was one of my best modules i learnt a lot under our two Lectures Mr. Sujoy and Mr. Bahja C is a language that most companies require not just computer scientists but engineers as well to know. I know because my friends studying engineering have said so and also it is a required module they have to take in first year. I liked C the most because of the exercises we were given which were easy to understand and carry out. Lectures were informative and good also the TA's were helpful when needed.</p>
-        </div>
-
-        <div>
-            <p>published: 03.07.2020, 19:34</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Mobile Computing is one of the modules i am looking forward to next semester from the description and information i have gotten from third years and friends in other universities i feel this would be the perfect module for me and i can not wait to start learning about it.</p>
-        </div>
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
     </body>
 </html>
