@@ -1,0 +1,23 @@
+1598286358173	geckodriver	INFO	Listening on 127.0.0.1:60781
+1598286359181	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gb/w4d_j72s4vb5n9fdl5qcclbh0000gn/T/rust_mozprofileaEqxal"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598286365510	Marionette	INFO	Listening on port 60792
+1598286365561	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598286651886	geckodriver	INFO	Listening on 127.0.0.1:60899
+1598286652935	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gb/w4d_j72s4vb5n9fdl5qcclbh0000gn/T/rust_mozprofiletZpB4S"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598286657121	Marionette	INFO	Listening on port 60910
+1598286657223	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598286810553	geckodriver	INFO	Listening on 127.0.0.1:61071
+1598286811604	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gb/w4d_j72s4vb5n9fdl5qcclbh0000gn/T/rust_mozprofileTxCeCP"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598286816034	Marionette	INFO	Listening on port 61078
+1598286816235	Marionette	WARN	TLS certificate errors will be ignored for this session
+1598526447351	Marionette	INFO	Stopped listening on port 61078
+1598526450390	Marionette	INFO	Stopped listening on port 60792
+1598526453440	Marionette	INFO	Stopped listening on port 60910
+1598531550376	geckodriver	INFO	Listening on 127.0.0.1:57853
+1598531551419	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/gb/w4d_j72s4vb5n9fdl5qcclbh0000gn/T/rust_mozprofileuI2fUX"
+console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
+1598531558121	Marionette	INFO	Listening on port 57864
+1598531558202	Marionette	WARN	TLS certificate errors will be ignored for this session
