@@ -1,6 +1,9 @@
 h1 a, h2 a {
-    color: #C25100;
+    color: #ffffff;
     font-family: 'Lobster';
+}
+h2{
+    color: #ffffff;
 }
 
 body {
@@ -13,7 +16,7 @@ body {
     padding: 20px 20px 20px 40px;
 }
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active, .page-header h2 a , .page-header h3 a{
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
@@ -57,4 +60,8 @@ h1, h2, h3, h4 {
 
 .post p {
 	color: #000000;
+}
+
+.cv h2{
+    color: #ffffff;
 }

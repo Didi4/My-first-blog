@@ -1,0 +1,18 @@
+{% extends 'blog/cv.html' %}
+
+{% block content %}
+    <div class="cv">
+        {% if user.is_authenticated %}
+           <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
+        <p>{{ cv.name|linebreaksbr }}</p>
+        <p>{{ cv.address|linebreaksbr }}</p>
+        <p>{{ cv.telephone|linebreaksbr }}</p>
+        <p>{{ cv.email|linebreaksbr }}</p>
+        <p>{{ cv.objective|linebreaksbr }}</p>
+        <p>{{ cv.skills|linebreaksbr }}</p>
+        <p>{{ cv.workexperience|linebreaksbr }}</p>
+        <p>{{ cv.education|linebreaksbr }}</p>
+        <p>{{ cv.languages|linebreaksbr }}</p>
+    </div>
+{% endblock %}

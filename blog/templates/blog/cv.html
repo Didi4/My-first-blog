@@ -1,0 +1,49 @@
+{% load static %}
+<html>
+    <head>
+         <title>Django Girls blog</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+         <div class="page-header">
+            {% if user.is_authenticated %}
+              <a href="{% url 'cv_edit' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            {% endif %}
+            <h1><a href="{% url 'cv'%}">CV Page</a></h1>
+            <h3><a href="/">Django Girls Blog</a></h3>
+         </div>
+         <div class="content container">
+            {% for c in cv %}
+                <div class="cv">
+                    <h2>Name:</h2>
+                    <p>{{ c.name|linebreaksbr }}</p>
+                    <h2>Address:</h2>
+                    <p>{{ c.address|linebreaksbr }}</p>
+                    <h2>Tel:</h2>
+                    <p>{{ c.telephone|linebreaksbr }}</p>
+                    <h2>Email:</h2>
+                    <p>{{ c.email|linebreaksbr }}</p>
+                    <h2>Objectives:</h2>
+                    <p>{{ c.objective|linebreaksbr }}</p>
+                    <h2>Skills:</h2>
+                    <p>{{ c.skills|linebreaksbr }}</p>
+                    <h2>Work Experience:</h2>
+                    <p>{{ c.workexperience|linebreaksbr }}</p>
+                    <h2>Education:</h2>
+                    <p>{{ c.education|linebreaksbr }}</p>
+                    <h2>Languages:</h2>
+                    <p>{{ c.languages|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+             <div class="row">
+                 <div class="col-md-8">
+                 {% block content %}
+                 {% endblock %}
+                 </div>
+             </div>
+         </div>
+    </body>
+</html>

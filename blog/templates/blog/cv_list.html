@@ -1,0 +1,17 @@
+{% extends 'blog/cv.html' %}
+
+{% block content %}
+    {% for c in cv %}
+    <div class="cv">
+        <p>{{ c.name|linebreaksbr }}</p>
+        <p>{{ cv.address|linebreaksbr }}</p>
+        <p>{{ cv.telephone|linebreaksbr }}</p>
+        <p>{{ cv.email|linebreaksbr }}</p>
+        <p>{{ cv.objective|linebreaksbr }}</p>
+        <p>{{ cv.skills|linebreaksbr }}</p>
+        <p>{{ cv.workexperience|linebreaksbr }}</p>
+        <p>{{ cv.education|linebreaksbr }}</p>
+        <p>{{ cv.languages|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
